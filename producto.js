@@ -7,11 +7,11 @@ class Producto{
     }
 
     hayStock(cantidad) {
-        return this.stock == false;
+        return cantidad <= this.stock;
     }
 
     ficha() {
-        return `Nombre: ${this.nombre}, Precio: ${this.precio}, Stock: ${this.stock}`;
+        return `Nombre: ${this.nombre}, Precio: ${this.precio}, Categoria: ${this.categoria} Stock: ${this.stock}`;
     }
 }
 module.exports = Producto;

@@ -6,7 +6,7 @@ class Usuario{
     }
 
     saludo() {
-        return `Saludos, me presento, mi nombre es: ${this.nombre}`;
+        return `Saludos ${this.nombre}`;
     }
 }
 

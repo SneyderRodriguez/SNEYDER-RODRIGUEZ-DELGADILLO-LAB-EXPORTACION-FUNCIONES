@@ -10,7 +10,7 @@ function esEmailValido(email) {
 }
 
 function calcularDescuento(precio, porcentaje) {
-    return precio * porcentaje;
+    return precio -(precio * porcentaje / 100);
 }
 
-module.exports = {formatearPrecio, esEmailValido, calcularDescuento} = require("./utilidades.js");
+module.exports = {formatearPrecio, esEmailValido, calcularDescuento};
