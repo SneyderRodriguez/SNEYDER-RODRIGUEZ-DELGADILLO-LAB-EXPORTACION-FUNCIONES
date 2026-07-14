@@ -32,7 +32,10 @@ class Carrito{
         let texto = `${this.Usuario.saludo()}, \n`;
         for(let item of this.items){
             texto += `Producto\t${item.producto.nombre}\n
-            Cantidad\t${}`
+            Cantidad\t${item.producto.cantidad}\n
+            Valor\t${formatearPrecio(item.producto.precio)}\n`;
         }
+        texto += `Total\t${formatearPrecio(this.total())}`;
+        return texto;
     }
 }
